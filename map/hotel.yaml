@@ -3,7 +3,7 @@
 cameras:
     camera1:
         type: perspective
-        position: [-6.2631, 53.3463, 16] # lon/lat for area in Dublin at zoom 16
+        position: [-46.6415, -23.5413, 16] # lon/lat for area in São Paulo at zoom 16
 
 labels-global:
     - &text_visible_continent         true
