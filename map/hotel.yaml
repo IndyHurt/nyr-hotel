@@ -3,7 +3,7 @@
 cameras:
     camera1:
         type: perspective
-        position: [-46.6415, -23.5413, 16] # lon/lat for area in São Paulo at zoom 16
+        position: [-46.6415, -23.5413, 17] # lon/lat for area in São Paulo at zoom 16
 
 labels-global:
     - &text_visible_continent         true
@@ -700,7 +700,7 @@ layers:
         data: { source: osm, layer: [pois] }
         filter: 
             all:
-                - kind: [hostel, hotel, motel]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [bed_and_breakfast, chalet, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
                # - label_placement: [yes]
         draw:
             icons:
@@ -733,7 +733,7 @@ layers:
             all:
                 #- name: false
                 #- $geometry: [point, polygon]
-                - kind: [hostel, hotel, motel]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [bed_and_breakfast, chalet, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
         draw:
             polygons:
                 color: aqua
