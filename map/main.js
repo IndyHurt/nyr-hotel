@@ -124,7 +124,7 @@ map = (function () {
                 popup.style.left = (pixel.x + 0) + 'px';
                 popup.style.top = (pixel.y + 0) + 'px';
                 
-                if ( scene.selection.feature.properties.kind == 'bed_and_breakfast' || scene.selection.feature.properties.kind == 'chalet' || scene.selection.feature.properties.kind == 'guest_house' || scene.selection.feature.properties.kind == 'hostel' || scene.selection.feature.properties.kind == 'hotel' || scene.selection.feature.properties.kind == 'motel' || scene.selection.feature.properties.kind == 'resort' ) 
+                if ( scene.selection.feature.properties.kind == 'hostel' || scene.selection.feature.properties.kind == 'hotel' || scene.selection.feature.properties.kind == 'motel' ) 
                 {
 	                popup.style.visibility = 'visible';
 	            }

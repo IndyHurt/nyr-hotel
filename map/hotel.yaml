@@ -700,7 +700,7 @@ layers:
         data: { source: osm, layer: [pois] }
         filter: 
             all:
-                - kind: [bed_and_breakfast, chalet, guest_house, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [hostel, hotel, motel]    #[false,building,commercial,residential,warehouse,public,dormitory]
                # - label_placement: [yes]
         draw:
             icons:
@@ -733,7 +733,7 @@ layers:
             all:
                 #- name: false
                 #- $geometry: [point, polygon]
-                - kind: [bed_and_breakfast, chalet, guest_house, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [hostel, hotel, motel]    #[false,building,commercial,residential,warehouse,public,dormitory]
         draw:
             polygons:
                 color: aqua
