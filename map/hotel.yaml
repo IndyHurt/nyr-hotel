@@ -1,4 +1,4 @@
-# This style highlights grocery POIs
+# This style highlights lodging features
 
 cameras:
     camera1:
@@ -705,7 +705,7 @@ layers:
         draw:
             icons:
                 size: [[13, 12px], [16, 16px], [19, 20px]]
-                sprite: grocery-store
+                sprite: hotel
                 interactive: true
                 order: 100
                 color: aqua
