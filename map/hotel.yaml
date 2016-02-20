@@ -696,11 +696,11 @@ scene:
 
 layers:
     # Special overlay for New Years Resolutions posts 
-    grocery:
+    hotel:
         data: { source: osm, layer: [pois] }
         filter: 
             all:
-                - kind: [supermarket, grocery-store, health_food, greengrocer]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [bed_and_breakfast, chalet, guest_house, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
                # - label_placement: [yes]
         draw:
             icons:
@@ -727,13 +727,13 @@ layers:
                     size: 12px
                     stroke: { color: aqua, width: 2 }
 
-    grocery_to_enhance:
+    hotel_to_enhance:
         data: { source: osm, layer: [buildings] }
         filter:
             all:
                 #- name: false
                 #- $geometry: [point, polygon]
-                - kind: [supermarket, grocery-store, health_food, greengrocer]    #[false,building,commercial,residential,warehouse,public,dormitory]
+                - kind: [bed_and_breakfast, chalet, guest_house, hostel, hotel, motel, resort]    #[false,building,commercial,residential,warehouse,public,dormitory]
         draw:
             polygons:
                 color: aqua

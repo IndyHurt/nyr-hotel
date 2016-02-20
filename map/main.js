@@ -7,7 +7,7 @@ map = (function () {
 
     // defaults
     var map_start_location = [0, 0, 2]; // world
-    var style_file = 'grocery.yaml';
+    var style_file = 'hotel.yaml';
 
     /*** URL parsing ***/
 
@@ -124,11 +124,11 @@ map = (function () {
                 popup.style.left = (pixel.x + 0) + 'px';
                 popup.style.top = (pixel.y + 0) + 'px';
                 
-                if ( scene.selection.feature.properties.kind == 'supermarket' || scene.selection.feature.properties.kind == 'grocery-store' || scene.selection.feature.properties.kind == 'health_food' || scene.selection.feature.properties.kind == 'greengrocer' ) 
+                if ( scene.selection.feature.properties.kind == 'bed_and_breakfast' || scene.selection.feature.properties.kind == 'chalet' || scene.selection.feature.properties.kind == 'guest_house' || scene.selection.feature.properties.kind == 'hostel' || scene.selection.feature.properties.kind == 'hotel' || scene.selection.feature.properties.kind == 'motel' || scene.selection.feature.properties.kind == 'resort' ) 
                 {
 	                popup.style.visibility = 'visible';
 	            }
-                popup.innerHTML = '<span class="labelInner">' + 'You found a grocery store to enhance!' + '</span><br>';
+                popup.innerHTML = '<span class="labelInner">' + 'You found a lodging feature to enhance!' + '</span><br>';
                 popup.appendChild(createEditLinkElement(url, 'iD', 'Edit with iD ➹'));
                 popup.appendChild(createEditLinkElement(josmUrl, 'JOSM', 'Edit with JOSM ➹'));
             });
@@ -148,7 +148,7 @@ map = (function () {
         anchor.target = '_blank';
         anchor.textContent = label;
         anchor.addEventListener('click', function (event) {
-            trackOutboundLink(url, 'editing_residential_buildings', type);
+            trackOutboundLink(url, 'editing_lodging_features', type);
         }, false);
         el.appendChild(anchor);
         return el;
