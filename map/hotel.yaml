@@ -3,7 +3,7 @@
 cameras:
     camera1:
         type: perspective
-        position: [-123.119, 49.283, 17] # lon/lat for area in Vancouver at zoom 17
+        position: [-123.119, 49.283, 16] # lon/lat for area in Vancouver at zoom 16
 
 labels-global:
     - &text_visible_continent         true
